@@ -22,16 +22,9 @@
 			flavor = "tap-preferred";
 			bindings = <&kp>, <&kp>;
 		};
-		lt: layertap {
-			compatible = "zmk,behavior-hold-tap";
-			label = "LAYERTAP";
-			#binding-cells = <2>;
-			flavor = "tap-preferred";
-			bindings = <&to>, <&kp>;
-			apping-term-ms = <180>;
-			quick_tap_ms = <190>;
-        };
   };
+  quick_tap_ms = <190>;
+
 
 	keymap {
 		compatible = "zmk,keymap";
@@ -43,7 +36,7 @@
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
       &hm LCTRL A      &hm LALT S    &hm LSHIFT D    &hm LGUI F      &kp G               &kp H          &hm RGUI J       &hm RSHIFT K     &hm RALT L     &hm RCTRL SEMI
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-	  &hm LSHIFT Z     &kp X     &hm LG(LS(LALT)) C   &kp V           &kp B              &kp N          &kp M            &hm LG(LS(LALT)) COMMA &kp DOT  &hm RSHIFT FSLH
+	  &hm LSHIFT Z     &kp X     &kp C   &hm LG(LS(LALT)) V           &kp B              &kp N      &hm LG(LS(LALT)) M &kp COMMA.      &kp DOT  &hm RSHIFT FSLH
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 	                                   &lt NUM ESC   &lt SYMB SPC     &lt NAV TAB       &lt FUNC RET    &lt SYMB BSPC    &lt NUM DEL
 //                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
