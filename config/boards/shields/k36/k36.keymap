@@ -23,8 +23,13 @@
 			bindings = <&kp>, <&kp>;
 		};
 		lt: layertap {
-            	apping-term-ms = <180>;
-            	quick_tap_ms = <190>;
+			compatible = "zmk,behavior-hold-tap";
+			label = "LAYERTAP";
+			#binding-cells = <2>;
+			flavor = "tap-preferred";
+			bindings = <&to>, <&kp>;
+			apping-term-ms = <180>;
+			quick_tap_ms = <190>;
         };
   };
 
