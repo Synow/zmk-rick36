@@ -22,14 +22,9 @@
 			flavor = "tap-preferred";
 			bindings = <&kp>, <&kp>;
 		};
-		bl: layertap {
-         		compatible = "zmk,behavior-hold-tap";
-        		label = "LAYERTAP";
-       	    	 	binding-cells = <2>;
-            	 	apping-term-ms = <180>;
-            	 	quick_tap_ms = <190>;
-            		flavor = "tap-preferred";
-            		bindings = <&to>, <&kp>;
+		lt: layertap {
+            	apping-term-ms = <180>;
+            	quick_tap_ms = <190>;
         };
   };
 
@@ -39,13 +34,13 @@
 		base_layer {
 			bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
-	  &kp Q            &kp W          &kp E           &kp R           &kp T              &kp Y          &kp U               &kp I          &kp O          &kp P   
+	  &kp Q            &kp W          &kp E           &kp R           &kp T              &kp Y          &kp U            &kp I            &kp O          &kp P   
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-      &hm LCTRL A      &hm LALT S    &hm LSHIFT D    &hm LGUI F      &kp G               &kp H          &hm RGUI J          &hm RSHIFT K   &hm RALT L     &hm RCTRL SEMI
+      &hm LCTRL A      &hm LALT S    &hm LSHIFT D    &hm LGUI F      &kp G               &kp H          &hm RGUI J       &hm RSHIFT K     &hm RALT L     &hm RCTRL SEMI
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-	  &hm LSHIFT Z     &kp X     &hm LG(LS(LALT)) C   &kp V           &kp B              &kp N          &kp M  &kp COMMA    &hm LG(LS(LALT)) DOT        &hm RSHIFT FSLH
+	  &hm LSHIFT Z     &kp X     &hm LG(LS(LALT)) C   &kp V           &kp B              &kp N          &kp M            &hm LG(LS(LALT)) COMMA &kp DOT  &hm RSHIFT FSLH
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
-	                                   &bl NUM ESC   &bl SYMB SPC     &bl NAV TAB       &bl FUNC RET    &bl SYMB BSPC    &bl NUM DEL
+	                                   &lt NUM ESC   &lt SYMB SPC     &lt NAV TAB       &lt FUNC RET    &lt SYMB BSPC    &lt NUM DEL
 //                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
 >;
 		};
