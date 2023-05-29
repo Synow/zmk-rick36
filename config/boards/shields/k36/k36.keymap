@@ -10,7 +10,7 @@
 #define NAV 3
 #define FUNC 4
   
-&lt { quick_tap_ms = <120>; };
+&lt { quick_tap_ms = <175>; };
 
 / {
     macros {
@@ -52,9 +52,9 @@
 			label = "HOMEROW_MODS";
 			#binding-cells = <2>;
 			tapping-term-ms = <190>;
-			quick_tap_ms = <120>;
+			quick_tap_ms = <175>;
 			global-quick-tap;
-			flavor = "tap-preferred";
+			flavor = "balanced";
 			bindings = <&kp>, <&kp>;
 		};
   };
