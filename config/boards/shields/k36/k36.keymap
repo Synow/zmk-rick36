@@ -10,7 +10,7 @@
 #define NAV 3
 #define FUNC 4
   
-&lt { quick_tap_ms = <180>; global-quick-tap-ms = <80>;]
+&lt { quick_tap_ms = <180>; global-quick-tap-ms = <80>; };
 
 / {
 behaviors {
