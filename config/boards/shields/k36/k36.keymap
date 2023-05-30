@@ -10,7 +10,7 @@
 #define NAV 3
 #define FUNC 4
   
-&lt { quick_tap_ms = <175>; };
+&lt { quick_tap_ms = <0>; };
 
 / {
     macros {
@@ -52,7 +52,7 @@
 			label = "HOMEROW_MODS";
 			#binding-cells = <2>;
 			tapping-term-ms = <190>;
-			quick_tap_ms = <175>;
+			quick_tap_ms = <0>;
 			global-quick-tap;
 			flavor = "tap-preferred";
 			bindings = <&kp>, <&kp>;
@@ -82,11 +82,11 @@
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
        &none           &none           &none          &none           &none                &kp LBKT        &kp N7         &kp N8          &kp N9          &kp EQUAL
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-	   &kp LCTRL       &kp LALT        &none    &none &none                &kp MINUS       &kp N4         &kp N5          &kp N6          &kp COLON
+       &kp LCTRL       &kp LALT        &none    &none &none                &kp MINUS       &kp N4         &kp N5          &kp N6          &kp COLON
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-	   &none           &none           &none          &none           &none                &kp GRAVE       &kp N1         &kp N2          &kp N3          &kp DOT 
+       &none           &none           &none          &none           &none                &kp GRAVE       &kp N1         &kp N2          &kp N3          &kp KP_DOT 
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
-	                                   &kp ESC        &kp SPC       &kp TAB                &kp RET       &kp BSPC        &kp N0
+	                                   &kp ESC        &kp SPC       &kp TAB            &kp RET         &kp BSPC       &kp N0
 //                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
 >;
 		};
