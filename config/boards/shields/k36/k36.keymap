@@ -10,9 +10,22 @@
 #define NAV 3
 #define FUNC 4
   
-&lt { quick_tap_ms = <0>; };
+&lt { quick_tap_ms = <180>; };
 
 / {
+behaviors {
+	hm: homerow_mods {
+		compatible = "zmk,behavior-hold-tap";
+		label = "HOMEROW_MODS";
+		#binding-cells = <2>;
+		tapping-term-ms = <190>;
+		quick_tap_ms = <180>;
+		global-quick-tap;
+		flavor = "tap-preferred";
+		bindings = <&kp>, <&kp>;
+	};
+  };
+
     macros {
         personal_email: personal_email {
             label = "ZM_removed";
@@ -45,20 +58,6 @@
             >;
         };
     };
-
-	behaviors {
-		hm: homerow_mods {
-			compatible = "zmk,behavior-hold-tap";
-			label = "HOMEROW_MODS";
-			#binding-cells = <2>;
-			tapping-term-ms = <190>;
-			quick_tap_ms = <0>;
-			global-quick-tap;
-			flavor = "tap-preferred";
-			bindings = <&kp>, <&kp>;
-		};
-  };
-
 
 	keymap {
 		compatible = "zmk,keymap";
