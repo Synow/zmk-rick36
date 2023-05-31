@@ -12,8 +12,8 @@
   
 &lt {
 	flavor = "hold-preferred";
-	tapping-term-ms = <190>;
-	quick-tap-ms = <175>;               
+	tapping-term-ms = <180>;
+	quick-tap-ms = <190>;               
     	global-quick-tap;  
 };
 
@@ -24,8 +24,8 @@ behaviors {
 		label = "HOMEROW_MODS";
 		#binding-cells = <2>;
 		flavor = "hold-preferred";
-		tapping-term-ms = <190>;
-		quick-tap-ms = <175>;               
+		tapping-term-ms = <180>;
+		quick-tap-ms = <190>;               
     		global-quick-tap;        
 		bindings = <&kp>, <&kp>;
 	};
