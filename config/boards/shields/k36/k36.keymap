@@ -14,7 +14,7 @@
 	flavor = "balanced";
 	tapping-term-ms = <200>;
 	quick-tap-ms = <180>;               
-    	global-quick-tap;  
+    	//global-quick-tap;  
 	hold-trigger-on-release; 
 };
 
@@ -27,7 +27,7 @@ behaviors {
 		flavor = "balanced";
 		tapping-term-ms = <200>;
 		quick-tap-ms = <180>;               
-    		global-quick-tap;        
+    		//global-quick-tap;        
 		bindings = <&kp>, <&kp>;
 		hold-trigger-on-release; 
 	};
