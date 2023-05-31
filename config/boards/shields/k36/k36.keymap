@@ -12,7 +12,7 @@
   
 &lt {
 	flavor = "balanced";
-	tapping-term-ms = <280>;
+	tapping-term-ms = <190>;
 	quick-tap-ms = <175>;               
     	global-quick-tap;  
 };
@@ -24,7 +24,7 @@ behaviors {
 		label = "HOMEROW_MODS";
 		#binding-cells = <2>;
 		flavor = "balanced";
-		tapping-term-ms = <280>;
+		tapping-term-ms = <190>;
 		quick-tap-ms = <175>;               
     		global-quick-tap;        
 		bindings = <&kp>, <&kp>;
