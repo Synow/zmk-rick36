@@ -13,7 +13,7 @@
 &lt {
 	flavor = "hold-preferred";
 	tapping-term-ms = <180>;
-	quick-tap-ms = <190>;               
+	quick-tap-ms = <180>;               
     	global-quick-tap;  
 };
 
@@ -25,7 +25,7 @@ behaviors {
 		#binding-cells = <2>;
 		flavor = "hold-preferred";
 		tapping-term-ms = <180>;
-		quick-tap-ms = <190>;               
+		quick-tap-ms = <180>;               
     		global-quick-tap;        
 		bindings = <&kp>, <&kp>;
 	};
@@ -114,7 +114,7 @@ behaviors {
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
 	&none           &none           &none           &none           &none              &none         &none            &none           &none         &none  
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-	&kp LG(A)       &none           &none           &none           &none              &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT      &kp CAPSLOCK
+	&kp LG(A)       &kp LALT        &kp LSHIFT      &none           &none              &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT      &kp CAPSLOCK
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 	&kp LG(Z)       &kp LG(X)       &kp LG(C)       &kp LG(V)       &none              &kp LG(LEFT)        &kp PG_DN    &kp PG_UP     &kp LG(RIGHT)   &kp INSERT
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
