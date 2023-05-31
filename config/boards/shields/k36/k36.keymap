@@ -11,7 +11,7 @@
 #define FUNC 4
   
 &lt {
-	flavor = "balanced";
+	flavor = "hold-preferred";
 	tapping-term-ms = <190>;
 	quick-tap-ms = <175>;               
     	global-quick-tap;  
@@ -23,7 +23,7 @@ behaviors {
 		compatible = "zmk,behavior-hold-tap";
 		label = "HOMEROW_MODS";
 		#binding-cells = <2>;
-		flavor = "balanced";
+		flavor = "hold-preferred";
 		tapping-term-ms = <190>;
 		quick-tap-ms = <175>;               
     		global-quick-tap;        
