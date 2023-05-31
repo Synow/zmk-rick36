@@ -15,6 +15,7 @@
 	tapping-term-ms = <200>;
 	quick-tap-ms = <180>;               
     	global-quick-tap;  
+	hold-trigger-on-release; 
 };
 
 / {
@@ -28,6 +29,7 @@ behaviors {
 		quick-tap-ms = <180>;               
     		global-quick-tap;        
 		bindings = <&kp>, <&kp>;
+		hold-trigger-on-release; 
 	};
   };
 
