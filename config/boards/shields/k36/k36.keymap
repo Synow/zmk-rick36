@@ -12,7 +12,7 @@
 #define FUNC 4
 #define MUS 5
   
-#define U_MOUSE_MOVE_MAX 1400                     /* <--- New max speed setting (default: 600) */
+#define U_MOUSE_MOVE_MAX 1800                     /* <--- New max speed setting (default: 600) */
 #undef MOVE_UP
 #undef MOVE_DOWN
 #undef MOVE_LEFT
@@ -28,7 +28,7 @@
 &lt {
 	flavor = "balanced";
 	tapping-term-ms = <200>;
-	quick-tap-ms = <180>;               
+	quick-tap-ms = <199>;               
     	//global-quick-tap;  
 	//hold-trigger-on-release; 
 };
@@ -41,7 +41,7 @@ behaviors {
 		#binding-cells = <2>;
 		flavor = "balanced";
 		tapping-term-ms = <200>;
-		quick-tap-ms = <180>;               
+		quick-tap-ms = <199>;               
     		//global-quick-tap;        
 		bindings = <&kp>, <&kp>;
 		//hold-trigger-on-release; 
