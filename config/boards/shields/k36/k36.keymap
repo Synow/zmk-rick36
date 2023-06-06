@@ -12,7 +12,7 @@
 #define FUNC 4
 #define MUS 5
   
-#define U_MOUSE_MOVE_MAX 1800                     /* <--- New max speed setting (default: 600) */
+#define U_MOUSE_MOVE_MAX 1600                     /* <--- New max speed setting (default: 600) */
 #undef MOVE_UP
 #undef MOVE_DOWN
 #undef MOVE_LEFT
@@ -53,6 +53,7 @@ behaviors {
             label = "ZM_removed";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+			wait-ms = <10>;
             bindings = <
                 &kp X &kp X &kp X &kp X &kp X
                 &kp X &kp X &kp X &kp X &kp X
@@ -66,6 +67,7 @@ behaviors {
         work_email: work_email {
             label = "ZM_removed";
             compatible = "zmk,behavior-macro";
+			wait-ms = <10>;
             #binding-cells = <0>;
             bindings = <
                 &kp X &kp X &kp X &kp X &kp X
