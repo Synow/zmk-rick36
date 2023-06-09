@@ -22,6 +22,20 @@
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
 
+#define U_MOUSE_SCROLL_MAX 100                    /* <--- New max speed setting (default: 10) */
+
+#undef SCROLL_UP
+#undef SCROLL_DOWN
+#undef SCROLL_LEFT
+#undef SCROLL_RIGHT
+#define SCROLL_UP SCROLL_VERT(U_MOUSE_SCROLL_MAX)
+#define SCROLL_DOWN SCROLL_VERT(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_LEFT SCROLL_HOR(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_RIGHT SCROLL_HOR(U_MOUSE_SCROLL_MAX)
+
+&mwh {
+  time-to-max-speed-ms = <500>;                 /* <--- How long time until max speed is reached */
+};
 &mmv {
 	time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
 };
