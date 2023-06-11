@@ -22,7 +22,7 @@
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
 
-#define U_MOUSE_SCROLL_MAX 100                    /* <--- New max speed setting (default: 10) */
+#define U_MOUSE_SCROLL_MAX 70                    /* <--- New max speed setting (default: 10) */
 
 #undef SCROLL_UP
 #undef SCROLL_DOWN
