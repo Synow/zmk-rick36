@@ -145,11 +145,11 @@ behaviors {
 		nav_layer {
 			bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
-	&none           &none           &none           &none           &none              &none         &none            &none           &none         &none  
+	&BT_CLR           &none           &none           &none           &none              &none         &none            &none           &none         &none  
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-	&kp LG(A)       &kp LALT        &kp LSHIFT      &kp LGUI        &none              &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT      &kp CAPSLOCK
+	&kp LG(A)         &kp LALT        &kp LSHIFT      &kp LGUI        &none              &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT      &kp CAPSLOCK
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-	&kp LG(Z)       &kp LG(X)       &kp LG(C)       &kp LG(V)       &none              &kp LG(LEFT)        &kp PG_DN    &kp PG_UP     &kp LG(RIGHT)   &kp INSERT
+	&kp LG(Z)         &kp LG(X)       &kp LG(C)       &kp LG(V)       &none              &kp LG(LEFT)        &kp PG_DN    &kp PG_UP     &kp LG(RIGHT)   &kp INSERT
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 	                                   &kp ESC          &kp SPC       &kp TAB              &kp RET         &kp BSPC        &kp DEL
 //                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
