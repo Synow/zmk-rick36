@@ -85,14 +85,10 @@ behaviors {
             #binding-cells = <0>;
             bindings = <
                 &kp S &kp I &kp V &kp A &kp N
-                &kp DOT
-                &kp H &kp E &kp L &kp F &kp E
-                &kp R
                 &kp AT
-                &kp T &kp A &kp R &kp A &kp N
-                &kp I &kp S
+                &kp S &kp P &kp I &kp R &kp I &kp T &kp T
                 &kp DOT
-                &kp C &kp O &kp M
+                &kp I &kp O
             >;
         };
     };
