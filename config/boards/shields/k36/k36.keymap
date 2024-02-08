@@ -25,7 +25,7 @@
 #define MOVE_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
 
 #define U_MOUSE_SCROLL_MAX 15                    /* <--- New max speed setting (default: 10) */
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 15                    /* <--- New max speed setting (default: 10) */
+// #define ZMK_MOUSE_DEFAULT_SCRL_VAL 15                    /* <--- New max speed setting (default: 10) */
 
 #undef SCROLL_UP
 #undef SCROLL_DOWN
