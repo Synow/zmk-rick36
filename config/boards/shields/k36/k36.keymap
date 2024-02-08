@@ -36,6 +36,25 @@
 #define SCROLL_LEFT SCROLL_X(-U_MOUSE_SCROLL_MAX)
 #define SCROLL_RIGHT SCROLL_X(U_MOUSE_SCROLL_MAX)
 
+/* left-hand HRMs */
+ZMK_BEHAVIOR(hml, hold_tap,
+	flavor = "balanced";
+	tapping-term-ms = <280>;
+	quick-tap-ms = <175>;                // repeat on tap-into-hold
+	require-prior-idle-ms = <150>;
+	bindings = <&kp>, <&kp>;
+	hold-trigger-on-release;             // delay positional check until key-release
+)
+/* right-hand HRMs */
+ZMK_BEHAVIOR(hmr, hold_tap,
+	flavor = "balanced";
+	tapping-term-ms = <280>;
+	quick-tap-ms = <175>;                // repeat on tap-into-hold
+	require-prior-idle-ms = <150>;
+	bindings = <&kp>, <&kp>;
+	hold-trigger-on-release;             // delay positional check until key-release
+)
+
 &msc {
   time-to-max-speed-ms = <900>;                 /* <--- How long time until max speed is reached */
 };
@@ -64,26 +83,6 @@ behaviors {
 		//hold-trigger-on-release; 
 	};
   };
-
-	/* left-hand HRMs */
-	ZMK_BEHAVIOR(hml, hold_tap,
-		flavor = "balanced";
-		tapping-term-ms = <280>;
-		quick-tap-ms = <175>;                // repeat on tap-into-hold
-		require-prior-idle-ms = <150>;
-		bindings = <&kp>, <&kp>;
-		hold-trigger-on-release;             // delay positional check until key-release
-	)
-
-	/* right-hand HRMs */
-	ZMK_BEHAVIOR(hmr, hold_tap,
-		flavor = "balanced";
-		tapping-term-ms = <280>;
-		quick-tap-ms = <175>;                // repeat on tap-into-hold
-		require-prior-idle-ms = <150>;
-		bindings = <&kp>, <&kp>;
-		hold-trigger-on-release;             // delay positional check until key-release
-	)
 
     macros {
         personal_email: personal_email {
