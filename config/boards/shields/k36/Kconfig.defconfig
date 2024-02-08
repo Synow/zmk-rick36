@@ -1,9 +1,6 @@
 config ZMK_BLE
 	default y
 
-config ZMK_USB
-	default y
-
 
 if SHIELD_K36_LEFT
 
