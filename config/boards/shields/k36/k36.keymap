@@ -123,7 +123,7 @@ behaviors {
 		#binding-cells = <2>;
 		bindings = <&kp>, <&kp>;
 		flavor = "balanced";
-		tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+		tapping-term-ms = <HM_TAPPING_TERM>;
 		quick-tap-ms = <199>;               
 		require-prior-idle-ms = <HM_PRIOR_IDLE>;
 		hold-trigger-key-positions = <KEYS_R KEYS_T>;
@@ -135,7 +135,7 @@ behaviors {
 		#binding-cells = <2>;
 		bindings = <&kp>, <&kp>;
 		flavor = "balanced";
-		tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+		tapping-term-ms = <HM_TAPPING_TERM>;
 		quick-tap-ms = <175>;
 		require-prior-idle-ms = <HM_PRIOR_IDLE>;
 		hold-trigger-key-positions = <KEYS_L KEYS_T>;
