@@ -124,7 +124,7 @@ behaviors {
 		bindings = <&kp>, <&kp>;
 		flavor = "balanced";
 		tapping-term-ms = <HM_TAPPING_TERM>;
-		quick-tap-ms = <199>;               
+		quick-tap-ms = <175>;               
 		require-prior-idle-ms = <HM_PRIOR_IDLE>;
 		hold-trigger-key-positions = <KEYS_R KEYS_T>;
 		// hold-trigger-on-release;
@@ -195,7 +195,7 @@ behaviors {
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
 	  &kp Q            &kp W          &kp E           &kp R           &kp T              &kp Y          &kp U            &kp I            &kp O          &kp P   
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-      &hm_l LCTRL A      &hm_l LALT S  &hm_l LSHIFT D &hm_l LGUI F      &kp G               &kp H          &hm_r LGUI J &hm_r RSHIFT K     &hm_r LALT L     &hm_r LCTRL SEMI
+      &hm_l LCTRL A      &hm_l LALT S  &hm_shift_l LSHIFT D &hm_l LGUI F      &kp G               &kp H          &hm_r LGUI J &hm_shift_r RSHIFT K     &hm_r LALT L     &hm_r LCTRL SEMI
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 	  &hm_l LSHIFT Z     &kp X         &kp C     &hm LG(LS(LALT)) V     &kp B              &kp N          &hm LG(LS(LALT)) M  &kp COMMA      &kp DOT        &hm_r RSHIFT FSLH
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
