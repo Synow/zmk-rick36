@@ -150,10 +150,9 @@ behaviors {
 		flavor = "balanced";
 		tapping-term-ms = <200>;
 		quick-tap-ms = <199>;               
-    		//global-quick-tap;        
+    		global-quick-tap;        
 		bindings = <&kp>, <&kp>;
 		hold-trigger-on-release; 
-        require-prior-idle-ms = <150>; 
 	};
   };
 
