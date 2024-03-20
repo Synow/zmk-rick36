@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
+ #include <behaviors/mouse_keys.dtsi> 
 
 #define LT0  4  // left-top row
 #define LT1  3
@@ -79,50 +80,12 @@
 #define SCROLL_LEFT SCROLL_X(-U_MOUSE_SCROLL_MAX)
 #define SCROLL_RIGHT SCROLL_X(U_MOUSE_SCROLL_MAX)
 
-///////////
-#include <zephyr/dt-bindings/input/input-event-codes.h>
-/ {
-    behaviors {
-        /omit-if-no-ref/ mmv: mouse_move {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
-            time-to-max-speed-ms = <300>;
-            acceleration-exponent = <1>;
-        };
-    };
-
-    mmv_input_listener {
-        compatible = "zmk,input-listener";
-        device = <&mmv>;
-    };
-};
-#include <zephyr/dt-bindings/input/input-event-codes.h>
-/ {
-    behaviors {
-        /omit-if-no-ref/ msc: mouse_scroll {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_HWHEEL>;
-            y-input-code = <INPUT_REL_WHEEL>;
-            time-to-max-speed-ms = <300>;
-            acceleration-exponent = <0>;
-        };
-    };
-
-    msc_input_listener {
-        compatible = "zmk,input-listener";
-        device = <&msc>;
-    };
-};
 &msc {
   time-to-max-speed-ms = <900>;                 /* <--- How long time until max speed is reached */
 };
 &mmv {
 	time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
 };
-///////////
 
 &lt {
 	flavor = "balanced";
