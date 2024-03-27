@@ -58,17 +58,17 @@
 #define FUNC 4
 #define MUS 5
   
-#define U_MOUSE_MOVE_MAX 1600                     /* <--- New max speed setting (default: 600) */
-#undef MOVE_UP
-#undef MOVE_DOWN
-#undef MOVE_LEFT
-#undef MOVE_RIGHT
-#define MOVE_UP MOVE_Y(-U_MOUSE_MOVE_MAX)
-#define MOVE_DOWN MOVE_Y(U_MOUSE_MOVE_MAX)
-#define MOVE_LEFT MOVE_X(-U_MOUSE_MOVE_MAX)
-#define MOVE_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
+// #define U_MOUSE_MOVE_MAX 1600                     /* <--- New max speed setting (default: 600) */
+// #undef MOVE_UP
+// #undef MOVE_DOWN
+// #undef MOVE_LEFT
+// #undef MOVE_RIGHT
+// #define MOVE_UP MOVE_Y(-U_MOUSE_MOVE_MAX)
+// #define MOVE_DOWN MOVE_Y(U_MOUSE_MOVE_MAX)
+// #define MOVE_LEFT MOVE_X(-U_MOUSE_MOVE_MAX)
+// #define MOVE_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
 
-#define U_MOUSE_SCROLL_MAX 15                    /* <--- New max speed setting (default: 10) */
+// #define U_MOUSE_SCROLL_MAX 15                    /* <--- New max speed setting (default: 10) */
 // #define ZMK_MOUSE_DEFAULT_SCRL_VAL 15                    /* <--- New max speed setting (default: 10) */
 
 #undef SCROLL_UP
