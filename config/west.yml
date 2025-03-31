@@ -9,14 +9,27 @@
 #       import: app/west.yml
 #   self:
 #     path: config
+
+# manifest:
+#   remotes:
+#     - name: zmkfirmware
+#       url-base: https://github.com/petejohanson
+#   projects:
+#     - name: zmk
+#       remote: zmkfirmware
+#       revision: feat/pointers-move-scroll
+#       import: app/west.yml
+#   self:
+#     path: config
+
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/petejohanson
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: feat/pointers-move-scroll
+      revision: main
       import: app/west.yml
   self:
     path: config
