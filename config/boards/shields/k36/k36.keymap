@@ -158,36 +158,7 @@ behaviors {
 	};
   };
 
-    macros {
-        personal_email: personal_email {
-            label = "ZM_removed";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-	    wait-ms = <1>;
-            bindings = <
-                &kp X &kp X &kp X &kp X &kp X
-                &kp X &kp X &kp X &kp X &kp X
-                &kp E &kp R
-                &kp AT
-                &kp X &kp X &kp X &kp X &kp X
-                &kp DOT
-                &kp C &kp O &kp M
-            >;
-        };
-        work_email: work_email {
-            label = "ZM_removed";
-            compatible = "zmk,behavior-macro";
-	    wait-ms = <1>;
-            #binding-cells = <0>;
-            bindings = <
-                &kp X &kp X &kp X &kp X &kp X
-                &kp AT
-                &kp X &kp X &kp X &kp X &kp X &kp X &kp X
-                &kp DOT
-                &kp I &kp O
-            >;
-        };
-    };
+
 
 	keymap {
 		compatible = "zmk,keymap";
@@ -211,7 +182,7 @@ behaviors {
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
        &kp LC(LG(Q))   &none           &none          &none           &none                &kp LBKT        &kp N7         &kp N8          &kp N9          &kp EQUAL
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-       &kp LCTRL       &kp LALT        &none    &none &none                &kp MINUS       &kp N4         &kp N5          &kp N6          &kp COLON
+       &kp LCTRL       &kp LALT        &none          &none           &none                &kp MINUS       &kp N4         &kp N5          &kp N6          &kp COLON
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
        &none           &none           &none          &none           &none                &kp GRAVE       &kp N1         &kp N2          &kp N3          &kp KP_DOT 
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
