@@ -95,6 +95,17 @@
 };
 
 / {
+
+combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp ESC>;
+        };
+    };
+
+
 behaviors {
 	hm_l: homerow_mods_left {
 	compatible = "zmk,behavior-hold-tap";
