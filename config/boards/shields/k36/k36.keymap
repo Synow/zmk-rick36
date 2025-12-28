@@ -6,6 +6,7 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1600  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 15    // default: 10
 #include <dt-bindings/zmk/pointing.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 
 #define LT0  4  // left-top row
@@ -60,12 +61,6 @@
 #define FUNC 4
 #define MUS 5
   
-&msc {
-  time-to-max-speed-ms = <900>;                 /* <--- How long time until max speed is reached */
-};
-&mmv {
-	time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
-};
 &lt {
 	flavor = "balanced";
 	tapping-term-ms = <200>;
@@ -137,6 +132,44 @@ behaviors {
 		hold-trigger-on-release; 
         require-prior-idle-ms = <150>; 
 	};
+
+    mmv: mouse_move {
+        compatible = "zmk,behavior-input-two-axis";
+        #binding-cells = <1>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
+        time-to-max-speed-ms = <400>;
+        acceleration-exponent = <1>;
+    };
+
+    msc: mouse_scroll {
+        compatible = "zmk,behavior-input-two-axis";
+        #binding-cells = <1>;
+        x-input-code = <INPUT_REL_HWHEEL>;
+        y-input-code = <INPUT_REL_WHEEL>;
+        time-to-max-speed-ms = <900>;
+        acceleration-exponent = <0>;
+    };
+
+    mkp: mouse_key_press {
+        compatible = "zmk,behavior-mouse-key-press";
+        #binding-cells = <1>;
+    };
+  };
+
+  mmv_input_listener: mmv_input_listener {
+      compatible = "zmk,input-listener";
+      device = <&mmv>;
+  };
+
+  msc_input_listener: msc_input_listener {
+      compatible = "zmk,input-listener";
+      device = <&msc>;
+  };
+
+  mkp_input_listener: mkp_input_listener {
+      compatible = "zmk,input-listener";
+      device = <&mkp>;
   };
 
 
